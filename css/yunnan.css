@@ -1,0 +1,124 @@
+
+.yn-box{
+	position: relative;
+}
+.yn-box .bg{
+	display: block;
+	width: 100%;
+}
+
+.draw{
+	
+}
+.draw .drawA{
+	display: block;
+	width: 2.95rem;
+	height: .77rem;
+	background: url(../img/draw.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -1.375rem;
+	margin-top: -1.2rem;
+}
+
+
+.yn-introduce{
+	width: 5.92rem;
+	height: 5.97rem;
+	background: url(../img/introduce.png) center center no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -2.96rem;
+}
+.yn-introduceInner{
+	margin: .96rem 0 0 0;
+}
+.yn-introduceTitle{
+	display: block;
+	width: 1.1rem;
+	height: .26rem;
+	background: url(../img/introduce-word.png) center center no-repeat;
+	background-size: 100% 100%;
+	margin: 0 auto .11rem;
+}
+.yn-introduceList{
+	line-height: .34rem;
+	padding: 0 .16rem;
+}
+.yn-introduceList>li>p{
+	font-size: .24rem;
+	color: #FFFFFF;
+	font-family: "黑体";
+}
+
+
+/*弹框部分*/
+.alert-draw{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	display: none;
+}
+.alert-drawInner,
+.alert-mask{
+	width: 5rem;
+	height: 4rem;
+	background: url(../img/alert-draw.png) center center no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	top: 23%;
+	margin-left: -2.5rem;
+	/*margin-top: -2rem;*/
+	padding-top: 10px;
+	z-index: 15;
+	display: none;
+}
+.alert-drawClick{
+	margin: 1.18rem auto 0;
+	text-align: center;
+}
+.ipt-phone{
+	width: 4.54rem;
+	height: .46rem;
+	box-shadow: -1px -1px 4px #434040;
+	border-radius: 5px;
+	text-align: center;
+	font-size: .18rem;
+	font-family: "黑体";
+}
+.empty{
+	text-align: center; 
+	color: #fff; 
+	font-size: .18rem;
+	margin: .05rem 0;
+	display: none;
+}
+.sure{
+	display: block;
+	width: 2.83rem;
+	height: .75rem;
+	background: url(../img/sure.png) center center no-repeat;
+	background-size: 100% 100%;
+	margin: .37rem auto;
+}
+
+
+.alert-mask{
+	color: #fff;
+}
+.alert-mask>p{
+	margin-top: 1.84rem;
+	padding: 0 .4rem;
+	font-size: .22rem;
+	font-family: "黑体";
+	line-height: .33rem;
+}
