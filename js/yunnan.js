@@ -33,7 +33,7 @@ drawClick();
 
 //点击灰色背景弹框消失
 function drawHide() {
-	$('.alert-draw').click(function () {
+	$('.close').click(function () {
 		$('.alert-draw').fadeOut('fast');
 		$('.alert-drawInner').fadeOut('fast');
 	})
@@ -141,7 +141,7 @@ function alertShow(msg) {
 
 //点击灰色背景弹框消失
 function drawHide2() {
-	$('.alert-draw').click(function () {
+	$('.close').click(function () {
 		$('.alert-draw').fadeOut('fast');
 		$('.alert-mask').fadeOut('fast');
 	})

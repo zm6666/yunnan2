@@ -67,6 +67,20 @@
 	z-index: 10;
 	display: none;
 }
+.alert-draw .close{
+	display: block;
+	width: .58rem;
+	height: .58rem;
+	background: url(../img/close.png) center center no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	top: 23%;
+	margin-left: -.35rem;
+	margin-top: -1.1rem;
+	z-index: 15;
+	/*display: none;*/
+}
 .alert-drawInner,
 .alert-mask{
 	width: 5rem;
