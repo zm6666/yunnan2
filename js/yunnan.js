@@ -22,23 +22,17 @@
 
 
 //领取免费流量点击显示弹框
-function drawClick() {
-	$('.drawA').click(function () {
-		$('.alert-draw').fadeIn('fast');
-		$('.alert-drawInner').fadeIn('fast');
-	})
-}
-drawClick();
+$('.drawA').click(function () {
+	$('.alert-draw').fadeIn('fast');
+	$('.alert-drawInner').fadeIn('fast');
+})
 
 
 //点击灰色背景弹框消失
-function drawHide() {
-	$('.close').click(function () {
-		$('.alert-draw').fadeOut('fast');
-		$('.alert-drawInner').fadeOut('fast');
-	})
-}
-drawHide();
+$('.close').click(function () {
+	$('.alert-draw').fadeOut('fast');
+	$('.alert-drawInner').fadeOut('fast');
+})
 
 
 //手机号正则判断
@@ -46,7 +40,7 @@ function isPhone() {
 	var tel=$('.ipt-phone').val();
     var reg = /^(0|86|17951)?(13[0-9]|15[012356789]|18[0-9]|14[57]|17[678])[0-9]{8}$/;
     if (reg.test(tel)) {
-        $('.alert-draw').fadeOut('fast');
+      //$('.alert-draw').fadeOut('fast');   //删除显示闪动
 		$('.alert-drawInner').fadeOut('fast');
 		alertShow();
         return true;
@@ -55,7 +49,7 @@ function isPhone() {
     	$('.sure').css({
 			margin:'.17rem auto'
 		})
-        $('.empty').html('请输入正确的手机号！');
+        $('.empty').html('请正确输入手机号!');
         return false;
     }
 }
@@ -64,7 +58,7 @@ function isPhone() {
 function sureClick() {
 	$('.sure').click(function () {
 		if ($('.ipt-phone').val()=='') {
-			$('.empty').html('请输入您的手机号，点击确认！');
+			$('.empty').html('您还没有输入手机号!');
 			$('.empty').show();
 			$('.sure').css({
 				margin:'.17rem auto'
@@ -117,20 +111,19 @@ function sureClick() {
 sureClick();
 
 
+
+
 //输入框焦点事件
-function iptFocus() {
-	$('.ipt-phone').focus(function () {
-		$('.empty').hide();
-		$('.sure').css({
-			margin:'.37rem auto'
-		})
-		$('.ipt-phone').select(); //获取焦点选中手机号
+$('.ipt-phone').focus(function () {
+	$('.empty').hide();
+	$('.sure').css({
+		margin:'.37rem auto'
 	})
-}
-iptFocus();
+	$('.ipt-phone').select(); //获取焦点选中手机号
+})
 
 
-//z领取流量，显示弹框
+//领取流量，显示弹框
 function alertShow(msg) {
 	$('.alert-draw').fadeIn('fast');
 	$('.alert-mask').fadeIn('fast');
@@ -140,10 +133,7 @@ function alertShow(msg) {
 
 
 //点击灰色背景弹框消失
-function drawHide2() {
-	$('.close').click(function () {
-		$('.alert-draw').fadeOut('fast');
-		$('.alert-mask').fadeOut('fast');
-	})
-}
-drawHide2();
+$('.close').click(function () {
+	$('.alert-draw').fadeOut('fast');
+	$('.alert-mask').fadeOut('fast');
+})
