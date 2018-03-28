@@ -1,4 +1,5 @@
 
+
 .yn-box{
 	position: relative;
 }
@@ -22,17 +23,34 @@
 	margin-left: -1.375rem;
 	margin-top: -1.2rem;
 }
+@media only screen and (min-device-width: 1029px){
+	.draw .drawA{
+		top: 47%;
+		width: 4.95rem;
+    	height: .98rem;
+    	margin-left: -2.475rem;
+	}
+}
+@media only screen and (min-device-width: 2560px){
+	.draw .drawA{
+		top: 46.5%;
+	    width: 5.95rem;
+	    height: 1.5rem;
+	    margin-left: -2.975rem;
+	}
+}
+
 
 
 .yn-introduce{
-	width: 5.92rem;
+	width: 90%;
 	height: 5.97rem;
 	background: url(../img/introduce.png) center center no-repeat;
 	background-size: 100% 100%;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	margin-left: -2.96rem;
+	margin-left: -45%;
 }
 .yn-introduceInner{
 	margin: .96rem 0 0 0;
@@ -55,12 +73,41 @@
 	font-family: "黑体";
 }
 
+@media only screen and (min-device-width: 1029px) {
+    .yn-introduceList>li>p{
+		font-size: .44rem;
+	}
+	.yn-introduceList{
+		line-height: .55rem;
+		
+	}
+	.yn-introduce{
+		height: 7.58rem;
+		position: absolute;
+		bottom: 22%;
+	}
+}
+@media only screen and (min-device-width: 2560px) {
+    .yn-introduceList>li>p{
+		font-size: .44rem;
+	}
+	.yn-introduceList{
+		line-height: .55rem;
+		
+	}
+	.yn-introduce{
+		height: 5.98rem;
+		position: absolute;
+		bottom: 26%;
+	}
+}
+
 
 /*弹框部分*/
 .alert-draw{
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.7);
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -73,7 +120,7 @@
 	height: .58rem;
 	background: url(../img/close.png) center center no-repeat;
 	background-size: 100% 100%;
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	top: 23%;
 	margin-left: -.35rem;
@@ -87,7 +134,7 @@
 	height: 4rem;
 	background: url(../img/alert-draw.png) center center no-repeat;
 	background-size: 100% 100%;
-	position: absolute;
+	position: fixed;
 	left: 50%;
 	top: 23%;
 	margin-left: -2.5rem;
@@ -125,7 +172,6 @@
 	margin: .37rem auto;
 }
 
-
 .alert-mask{
 	color: #fff;
 }
@@ -136,3 +182,92 @@
 	font-family: "黑体";
 	line-height: .33rem;
 }
+@media only screen and (min-device-width: 1029px) {
+	.alert-drawInner,
+	.alert-mask{
+	  	width: 8rem;
+		height: 7rem;
+		top: 23%;
+		margin-left: -4rem;
+		/*margin-top: -2rem;*/
+		padding-top: 10px;
+	}
+	.alert-drawClick {
+	    margin: 3.08rem auto 0;
+	}
+	.ipt-phone{
+		width: 5.54rem;
+		height: .66rem;
+		font-size: .28rem;
+	}
+	.empty{
+		font-size: .28rem;
+	}
+	.sure{
+		display: block;
+		width: 3.83rem;
+		height: .95rem;
+		margin: .37rem auto;
+	}
+	.alert-draw .close{
+		width: 1.28rem;
+		height: 1.28rem;
+		margin-left: -.64rem;
+    	margin-top: -2.1rem;
+	}
+	.alert-mask>p{
+		margin-top: 3.84rem;
+		font-size: .28rem;
+		line-height: .63rem;
+		text-align: center;
+	}
+}
+@media only screen and (min-device-width: 2560px) {
+	.alert-drawInner,
+	.alert-mask{
+	   	width: 12rem;
+		height: 9rem;
+		top: 23%;
+		margin-left: -6rem;
+		/*margin-top: -2rem;*/
+		padding-top: 10px;
+	}
+	.alert-drawClick {
+	    margin: 4.18rem auto 0;
+	    text-align: center;
+	}
+	.ipt-phone{
+		width: 7.54rem;
+   		height: .97rem;
+    	font-size: .48rem;
+	}
+	.empty{
+		font-size: .48rem;
+	}
+	.sure{
+		display: block;
+    	width: 4.83rem;
+    	height: 1.25rem;
+    	margin: .39rem auto;
+	}
+	.alert-draw .close{
+		width: 1.58rem;
+		height: 1.58rem;
+		margin-left: -.79rem;
+    	margin-top: -2.1rem;
+	}
+	.alert-mask>p{
+		margin-top: 4.84rem;
+		font-size: .48rem;
+		line-height: .93rem;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+

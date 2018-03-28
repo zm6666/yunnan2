@@ -1,3 +1,4 @@
+
 //=====================适配方案开始
  (function (doc, win) {
     var docEl = doc.documentElement,
@@ -55,7 +56,7 @@ function isPhone() {
 }
 
 //点击确认按钮
-function sureClick() {
+//function sureClick() {
 	$('.sure').click(function () {
 		if ($('.ipt-phone').val()=='') {
 			$('.empty').html('您还没有输入手机号!');
@@ -95,8 +96,6 @@ function sureClick() {
 						alertShow(data.message);
 					}else if (data.code==5) {
 						alertShow(data.message);
-					}else if (data.code==6) {
-						alertShow(data.message);
 					}
 				},
 				error:function(){
@@ -107,8 +106,16 @@ function sureClick() {
 			isPhone();
 		}
 	})
-}
-sureClick();
+//}
+//sureClick();
+
+
+$('.ipt-phone').keydown(function (ev) {
+	var e=ev||window.event;
+	if (e.keyCode==13) {
+		$('.sure').click();
+	}
+})
 
 
 
