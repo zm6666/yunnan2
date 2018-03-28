@@ -23,24 +23,6 @@
 	margin-left: -1.375rem;
 	margin-top: -1.2rem;
 }
-@media only screen and (min-device-width: 1029px){
-	.draw .drawA{
-		top: 47%;
-		width: 4.95rem;
-    	height: .98rem;
-    	margin-left: -2.475rem;
-	}
-}
-@media only screen and (min-device-width: 2560px){
-	.draw .drawA{
-		top: 46.5%;
-	    width: 5.95rem;
-	    height: 1.5rem;
-	    margin-left: -2.975rem;
-	}
-}
-
-
 
 .yn-introduce{
 	width: 90%;
@@ -73,34 +55,6 @@
 	font-family: "黑体";
 }
 
-@media only screen and (min-device-width: 1029px) {
-    .yn-introduceList>li>p{
-		font-size: .44rem;
-	}
-	.yn-introduceList{
-		line-height: .55rem;
-		
-	}
-	.yn-introduce{
-		height: 7.58rem;
-		position: absolute;
-		bottom: 22%;
-	}
-}
-@media only screen and (min-device-width: 2560px) {
-    .yn-introduceList>li>p{
-		font-size: .44rem;
-	}
-	.yn-introduceList{
-		line-height: .55rem;
-		
-	}
-	.yn-introduce{
-		height: 5.98rem;
-		position: absolute;
-		bottom: 26%;
-	}
-}
 
 
 /*弹框部分*/
@@ -182,14 +136,101 @@
 	font-family: "黑体";
 	line-height: .33rem;
 }
-@media only screen and (min-device-width: 1029px) {
+
+@media only screen and (min-device-width: 1024px) {
+	.draw .drawA{
+		top: 48%;
+	    width: 3.95rem;
+	    height: .98rem;
+	    margin-left: -1.975rem;
+	}
+	.yn-introduceList>li>p{
+		font-size: .34rem;
+	}
+	.yn-introduceList{
+		line-height: .48rem;
+		
+	}
+	.yn-introduce{
+		height: 7.88rem;
+		position: absolute;
+		bottom: 6%;
+	}
+	.yn-introduceTitle{
+		width: 1.8rem;
+		height: .4rem;
+		margin: 0 auto .11rem;
+	}
+	.alert-drawInner,
+	.alert-mask{
+	  	width: 7rem;
+		height: 6rem;
+		top: 23%;
+		margin-left: -3.5rem;
+		padding-top: 10px;
+	}
+	.alert-drawClick {
+	    margin: 2.48rem auto 0;
+	}
+	.ipt-phone{
+		width: 4.54rem;
+    	height: .6rem;
+    	font-size: .26rem;
+	}
+	.empty{
+		font-size: .26rem;
+	}
+	.sure{
+		width: 3.33rem;
+    	height: .85rem;
+    	margin: .37rem auto;
+	}
+	.alert-draw .close{
+		width: 1rem;
+    	height: 1rem;
+    	margin-left: -.5rem;
+    	margin-top: -1.6rem;
+	}
+	.alert-mask>p{
+		margin-top: 2.84rem;
+    	font-size: .26rem;
+    	line-height: .5rem;
+	}
+	.yn-introduceInner{
+		margin: 1.26rem 0 0 0;
+	}
+}
+
+@media only screen and (min-device-width: 1920px) {
+	.draw .drawA{
+		top: 47%;
+		width: 4.95rem;
+    	height: .98rem;
+    	margin-left: -2.475rem;
+	}
+	.yn-introduceList>li>p{
+		font-size: .44rem;
+	}
+	.yn-introduceList{
+		line-height: .55rem;
+		
+	}
+	.yn-introduce{
+		height: 7.88rem;
+		position: absolute;
+		bottom: 20%;
+	}
+	.yn-introduceTitle{
+		width: 2.1rem;
+		height: .6rem;
+		margin: 0 auto .11rem;
+	}
 	.alert-drawInner,
 	.alert-mask{
 	  	width: 8rem;
 		height: 7rem;
 		top: 23%;
 		margin-left: -4rem;
-		/*margin-top: -2rem;*/
 		padding-top: 10px;
 	}
 	.alert-drawClick {
@@ -216,20 +257,39 @@
     	margin-top: -2.1rem;
 	}
 	.alert-mask>p{
-		margin-top: 3.84rem;
-		font-size: .28rem;
-		line-height: .63rem;
-		text-align: center;
+		margin-top: 2.84rem;
+    	font-size: .28rem;
+    	line-height: .63rem;
+	}
+	.yn-introduceInner{
+		margin: 1.26rem 0 0 0;
 	}
 }
 @media only screen and (min-device-width: 2560px) {
+	.draw .drawA{
+		top: 46.5%;
+	    width: 5.95rem;
+	    height: 1.5rem;
+	    margin-left: -2.975rem;
+	}
+	.yn-introduceList>li>p{
+		font-size: .44rem;
+	}
+	.yn-introduceList{
+		line-height: .55rem;
+		
+	}
+	.yn-introduce{
+		height: 6.58rem;
+		position: absolute;
+		bottom: 26%;
+	}
 	.alert-drawInner,
 	.alert-mask{
 	   	width: 12rem;
 		height: 9rem;
 		top: 23%;
 		margin-left: -6rem;
-		/*margin-top: -2rem;*/
 		padding-top: 10px;
 	}
 	.alert-drawClick {
@@ -257,10 +317,9 @@
     	margin-top: -2.1rem;
 	}
 	.alert-mask>p{
-		margin-top: 4.84rem;
-		font-size: .48rem;
-		line-height: .93rem;
-		text-align: center;
+		margin-top: 3.84rem;
+    	font-size: .48rem;
+    	line-height: .93rem;
 	}
 }
 
