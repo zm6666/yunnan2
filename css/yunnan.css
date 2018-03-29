@@ -201,9 +201,9 @@
 	}
 }
 
-@media only screen and (min-device-width: 1920px) {
+@media only screen and (min-device-width: 1080px) {
 	.draw .drawA{
-		top: 47%;
+		top: 48%;
 		width: 4.95rem;
     	height: .98rem;
     	margin-left: -2.475rem;
@@ -216,9 +216,9 @@
 		
 	}
 	.yn-introduce{
-		height: 7.88rem;
+		height: 9.88rem;
 		position: absolute;
-		bottom: 20%;
+		bottom: 0%;
 	}
 	.yn-introduceTitle{
 		width: 2.1rem;
@@ -265,7 +265,7 @@
 		margin: 1.26rem 0 0 0;
 	}
 }
-@media only screen and (min-device-width: 2560px) {
+@media only screen and (min-device-width: 1440px) {
 	.draw .drawA{
 		top: 46.5%;
 	    width: 5.95rem;
@@ -280,9 +280,9 @@
 		
 	}
 	.yn-introduce{
-		height: 6.58rem;
+		height: 8.58rem;
 		position: absolute;
-		bottom: 26%;
+		bottom: 12%;
 	}
 	.alert-drawInner,
 	.alert-mask{
